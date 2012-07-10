@@ -1,22 +1,31 @@
 $(function(){
   
-  // Bind an event to window.onhashchange that, when the hash changes, gets the
-  // hash and adds the class "selected" to any matching nav link.
+
   $(window).hashchange( function(){
     var hash = location.hash;
-    
-    // Set the page title based on the hash.
-    document.title = 'valor hash ' + ( hash.replace( /^#/, '' ) || 'blank' ) + '.';
-    
-    // Iterate over all nav links, setting the "selected" class as-appropriate.
+    if(hash == '') {hash='#!/home';}
+    //document.title = 'valor hash ' + ( hash.replace( /^#!\//, '') || 'blank' ) + '.';
+    //document.title = 'valor hash ' + ( that.attr('title') || 'None' ) + '.';
+    var an = $('.active').attr("href");
     $('nav a').each(function(){
       var that = $(this);
-      that[ that.attr( 'href' ) === hash ? 'addClass' : 'removeClass' ]( 'selected' );
+      //that[ that.attr( 'href' ) === hash ? 'addClass' : 'removeClass' ]( 'active' );
+      if(that.attr( 'href' ) === hash){
+          document.title = ( that.attr('title') || 'None' );
+          $(".actual").hide("slide", { direction: "left" }, 350,function(){
+            $('.'+(hash.replace( /^#!\//, ''))).show("slide", { direction: "right" }, 350).addClass("actual");
+          }).removeClass("actual");
+          
+          if(!($("algo").length)){$('.'+(hash.replace( /^#!\//, ''))).addClass("actual"); }
+          
+      }else{
+          that.removeClass('active');
+      }
     });
   })
   
-  // Since the event is only triggered when the hash changes, we need to trigger
-  // the event now, to handle the hash the page may have loaded with.
   $(window).hashchange();
   
 });
+
+$("#ct>section").hide("fast");

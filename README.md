@@ -1,8 +1,6 @@
-MyHTMLbase
-==========
+Sacitec Web
+=============
 
-Simple HTML Template
+Este una rama de mi template creada para el sitio de sacitec.com
 
-Esta es un repositorio que almacenas algunos de los archivos que me
-ayudan a la hora de iniciar con un proyecto rapido, no es un proyecto
-en forma o por lo menos no en este momento.
+	Creado el dia martes 10 de julio del 2012.

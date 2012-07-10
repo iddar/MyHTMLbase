@@ -70,11 +70,6 @@ textarea {
     color: #222;
 }
 
-body {
-    margin: 0;
-    font-size: 1em;
-    line-height: 1.4;
-}
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -438,11 +433,160 @@ td {
 /* ==|== primary styles =====================================================
    Author:
    ========================================================================== */
+html{
+    background: #ccc;
+}
+body {
+    margin: 20px auto;
+    font-size: 1em;
+    line-height: 1.4;
+    max-width: 780px;
+}
+header{
+    font-size: 0;
+}
+header .img{
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 0;
+}
+header img{display: block;}
+header nav{
+    display: inline-block;
+    width: 70%;
+    font-size:0;
+    text-align: right;
+}
+header nav a,header nav a:visited {
+    display:inline-block;
+    width:25%;
+    font-size:22px;
+    text-decoration:none;
+    color:#000;
+    text-shadow: 0px 0px 2px #000;
+}
+header nav a:hover,header nav a.active{
+    color: #fff;
+}
+
+div#fotos{
+    margin-bottom: 30px;
+    background: #fff;
+    display: block;
+    border: solid 6px;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 40);
+    border-radius: 10px;
+    font-size: 16px;
+    height: 180px;
+}
+div#fotos img{
+    width: 100%;
+    height: 180px;
+}
+div#fotos .help{
+    position: relative;
+    top: -45px;
+    height: 45px;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    z-index: 10;
+}
+
+h2, p, ul, li {font-size: 14px;}
 
 
+section>section{
+    font-size:0;
+    margin-top: 25px;
+}
+section>section article{
+    font-size: 14px;
+    display:inline-block;
+    width: 48%;
+    background: rgba(255,255,255,.5);
+    border-radius: 8px;
+    vertical-align:top;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 40);
+}
+section>h2{
+    font-size: 24px;
+}
+    div.intro{
+        font-size: 14px;
+        display: block;
+        width: 100%;
+        padding: 0 10px; 
+    }
+    div.intro p{
+        margin: 10px;
+    }
+    article h2{
+        text-align: center;
+    }
+    article p{
+        margin: 10px;
+    }
+
+    article.mision{
+        margin: 0 4% 0 0;
+    }
+    article.vision{
+
+    }
+
+    div#formulario {
+        max-width: 380px;
+        margin: 0 auto;
+        text-align: right;
+    }
+    fieldset {
+        font-size: 16px;
+    }
+
+    fieldset legend {display: none;}
+
+    form {font-size: 0;}
+    form input{
+        padding: 5px;
+        margin: 5px;
+    }
+
+    form .texto{
+        font-size: 17px;
+        display: block;
+        text-align: left;
+        margin: 0 10px;
+    }
+    .texto textarea, .texto label{
+        width: 100%
+    }
+
+    form input[type='submit'] {
+        font-size: 18px;
+        width: 70%;
+        display: block;
+        margin: 10px auto;
+    }
+
+    textarea{ padding: 10px; }
 
 
+    form input, form label{
+        font-size: 16px;
+        display: inline-block;
+        font-weight: bold;
+    }
+    ::-webkit-input-placeholder  { color:#666; }
+    input:-moz-placeholder { color:#666; }
 
+footer p{
+    margin-top: 60px;
+    text-align: center;
+    font-size:12px;
+    text-decoration:none;
+    color:#000;
+    text-shadow: 0px 0px 2px #000;
+}
 
 
 
@@ -462,9 +606,62 @@ td {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+
 }
 
+@media screen and (max-width:480px){
+    body{margin: 0;}
+    nav a{
+        width: 50%;
+    }
+    form{
+        width: 90%;
+        margin: 0 auto;
+    }
+    form label{display: none;}
+    form input{
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
 
+    header{
+        font-size: 0;
+    }
+    header .img{
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    header img{display: inline-block;}
+    header nav{
+        display: inline-block;
+        width: 100%;
+        font-size:0;
+        text-align: center;
+    }
+    header nav a,header nav a:visited {
+        display:inline-block;
+        width:50%;
+        font-size:18px;
+        text-decoration:none;
+        color:#000;
+        text-shadow: 0px 0px 2px #000;
+        margin-top: 14px;
+    }
+
+    section>section article{
+        font-size: 14px;
+        display:inline-block;
+        width: 100%;
+        background: transparent;
+        border-radius: 0px;
+        vertical-align:top;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+
+}
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
