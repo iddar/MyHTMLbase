@@ -1,24 +1,229 @@
-*{margin: 0;padding: 0;}
+/* Colorers del tema
+* Top : #ededed
+* Content : #7b7b7b
+* Footer : #434343
+* Menu: #f8970d
+*/
 
-body {
-    margin: 10px auto;
-    font-size: 1em;
-    line-height: 1.4;
-    max-width: 780px;
+*{margin:0;}
+html{}
+body{
+    background: #434343;
 }
-section#bd{
-    font-size:0;
-    width: 100%;
-    display: block;
+div#site{
+    max-width: 960px;
+    margin: 0 auto;
 }
-section#bd article{
-    font-size: 14px;
-    display:inline-block;
-    width: 50%;
-}
-section#bd article.mision{
 
-}
-section#bd article.vision{
+    header{
+        background: #ededed;
+        font-size: 0;
+        padding-bottom: 30px;
+    }
+        header div{display: inline-block;
+            text-align: center;
+            font-size: 16px;
+        }
+        header div.logo{ width: 35%; vertical-align: top; margin-top: 30px;}
+        header div.marcas{ width: 65%; }
+        div.logo hgroup{display:none;}
+
+    nav {
+        margin: -15px auto;
+        height: 30px;
+        width: 80%;
+    }
+    nav ul{list-style: none; font-size: 0; padding: 0;}
+    nav ul li{
+        text-align: center;
+        display: inline-block;
+        width: 25%;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    nav ul li a{
+        color: #46033b;
+        /*background: #f8970d;*/
+        padding: 3px 12px;
+        display: inline-block;
+        text-decoration: none;
+        border:2px solid #fff;
+        border-radius: 5px;
+        width: 60%;
+        box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 40);
+
+        background: #9dd53a; /* Old browsers */
+        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzlkZDUzYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ExZDU0ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzgwYzIxNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3Y2JjMGEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: -moz-linear-gradient(top, #9dd53a 0%, #a1d54f 50%, #80c217 51%, #7cbc0a 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9dd53a), color-stop(50%,#a1d54f), color-stop(51%,#80c217), color-stop(100%,#7cbc0a)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* IE10+ */
+        background: linear-gradient(to bottom, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); /* IE6-8 */
+
+    }
+    nav ul li a.present{
+        color: #454545;
+    }
+    nav ul li a:hover{
+        border-color: #ccc;
+    }
+
+    div#bod{
+        border-top: solid 4px #000; 
+        background: #7b7b7b;
+        padding: 20px;
+    }
+    div#bod article{}
+
+    footer{
+        padding-top: 20px;
+        border-top: solid 8px #000;
+    }
+
+    footer div#enlaces{
+        display: inline-block;
+        width: 50%
+    }
+    footer div.list{
+        display: inline-block;
+        text-align: center;
+        margin-left: 10px;
+    }
+        footer ul{
+            list-style: none;
+            padding: 5px 0 0 5px;
+            border-left: solid #2a2a2a 2px;
+            display: inline-block;
+            text-align: left;
+            font-size: 14px;
+        }
+        footer ul li{
+            color: #fff;
+        }
+        footer ul li:before{
+            content:"- ";
+        }
+        footer ul li a{
+            color: #ccc;
+            text-decoration: none;
+            margin-bottom: 3px;
+            display: inline-block;
+        }
+        footer ul li a:hover{
+            color: #fff;
+        }
+
+        footer div.data{
+            display: inline-block;
+            vertical-align: text-bottom;
+        }
+
+        footer div.data p{
+            margin-top: 60px;
+            text-align: center;
+            font-size:14px;
+            text-decoration:none;
+            color:#ccc;
+            text-shadow: 0px 0px 2px #000;
+        }
+
+
+@media screen and (max-width:480px){
+    /*header*/
+    nav {
+        margin: -15px auto;
+        height: 30px;
+        width: 100%;
+    }
+
+    nav ul{
+        box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 40);
+    }
+
+    nav ul li{
+        text-align: center;
+        display: inline-block;
+        width: 25%;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    nav ul li a{
+        text-align: center;
+        color: #46033b;
+        /*background: #f8970d;*/
+        padding: 3px 0px;
+        border:2px solid #fff;
+        border-width: 2px 0;
+        border-radius: 0px;
+        width: 100%;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+
+    nav ul li a.present{
+        color: #fff;
+    }
+    nav ul li a:hover{
+        border-color: #ccc;
+    }
+
+    header{
+        background: #ededed;
+        font-size: 0;
+        padding-bottom: 20px;
+    }
+    header div.logo{ width: 100%; vertical-align: top; margin-top: 0px;}
+    header div.marcas{ display: none; }
+    /*body*/
+
+    /*footer*/
+    footer{
+        padding-top: 10px;
+        border-top: solid 8px #000;
+    }
+
+    footer div#enlaces{
+        display: inline-block;
+        width: 100%
+    }
+    footer div.list{
+        display: inline-block;
+        text-align: center;
+        margin-left: 10px;
+    }
+        footer ul{
+            list-style: none;
+            padding: 5px 0 0 5px;
+            border-left: solid #2a2a2a 2px;
+            display: inline-block;
+            text-align: left;
+            font-size: 16px;
+        }
+        footer ul li:before{
+            content:"";
+        }
+        footer ul li a{
+            color: #ccc;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        footer ul li a:hover{
+            color: #fff;
+        }
+
+        footer div.data{
+            display: inline-block;
+            vertical-align: text-bottom;
+            text-align: center;
+            width: 100%;
+        }
+
+        footer div.data p{
+            margin-top: 10px;
+            font-size:16px;
+            text-shadow: 0px 0px 2px #000;
+        }
 
 }
