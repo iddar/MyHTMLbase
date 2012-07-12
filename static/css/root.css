@@ -24,12 +24,10 @@ div#site{
     max-width: 960px;
     margin: 0 auto;
     box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 30);
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
 }
 
     header{
-        background: #ededed;
+        background: #fff;
         font-size: 0;
         padding-bottom: 30px;
     }
@@ -75,7 +73,6 @@ div#site{
         background: -ms-linear-gradient(top, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* IE10+ */
         background: linear-gradient(to bottom, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* W3C */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); /* IE6-8 */
-
     }
     nav ul li a.present{
         color: #454545;
@@ -101,8 +98,14 @@ div#site{
 
     div#bod div.col{
         display: inline-block;
-        width: 50%;
+        width: 45%;
         vertical-align: top;
+        text-align: right;
+        margin-right: 5%;
+    }
+
+    div#bod div p{
+        text-align: justify;
     }
 
     div#bod div{
@@ -120,6 +123,7 @@ div#site{
         color: rgb(239, 102, 65);
         font-style: normal;
         letter-spacing: -1px;
+        text-align: left;
     }
 
     fieldset{
@@ -145,20 +149,20 @@ div#site{
         text-align: right;
     }
     fieldset div.datos input{
-        margin: 12px 50px 0 10px;
+        margin: 12px 0px 0 10px;
         padding: 8px;
         border: 0px solid;
         border-radius: 2px;
     }
     fieldset div.campo-texto{
-
+        text-align: left !important;
     }
     fieldset div.campo-texto label{
         display: block;
         margin-bottom: 5px;
     }
     fieldset div.campo-texto textarea{
-        width: 80%;
+        width: 90%;
         height: 80px;
         padding: 10px;
         display: block;
@@ -170,7 +174,7 @@ div#site{
         display: block;
         text-align: center;
         width: 180px;
-        margin: 10px 20% 0 auto;
+        margin: 10px 10% 0 auto;
         padding: 3px;
         font-weight: bold;
         font-size: 16px;
@@ -292,7 +296,7 @@ div#site{
     }
 
     header{
-        background: #ededed;
+        background: #fff;
         font-size: 0;
         padding-bottom: 20px;
     }
@@ -313,13 +317,16 @@ div#site{
     }
 
     fieldset div.datos{
-        text-align: left;
+        text-align: left !important;
         margin-bottom: 20px;
     }
 
     fieldset div.datos input{
         margin: 2px 0px;
         width: 90%;
+    }
+    fieldset div.campo-texto{
+        text-align: left !important;
     }
     fieldset div.campo-texto textarea{
         width: 90%;
