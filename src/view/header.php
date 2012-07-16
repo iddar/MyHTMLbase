@@ -42,10 +42,10 @@
         </header>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="empresa" class="present">Empresa</a></li>
-                <li><a href="servicios">Servicios</a></li>
-                <li><a href="contacto">Contacto</a></li>
+                <li><a href="index.php/">Home</a></li>
+                <li><a href="index.php/empresa" class="present">Empresa</a></li>
+                <li><a href="index.php/servicios">Servicios</a></li>
+                <li><a href="index.php/contacto">Contacto</a></li>
             </ul>
         </nav>
         <div id="bod">

@@ -18,12 +18,12 @@
 *{margin:0;}
 html{}
 body{
-    background: #434343;
+    background: #ccc;
 }
 div#site{
     max-width: 960px;
     margin: 0 auto;
-    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 30);
+    /*box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 30);*/
 }
 
     header{
@@ -82,8 +82,8 @@ div#site{
     }
 
     div#bod{
-        border-top: solid 4px #000; 
-        background-color: rgb(28, 28, 28);
+        border-top: solid 4px #3080F0; 
+        background-color: #fff;
         padding: 20px;
 
     }
@@ -109,7 +109,7 @@ div#site{
     }
 
     div#bod div{
-        color: rgb(227,215,191);
+        color: #000;
         font: 300 16px/1.5 "Helvetica Neue",sans-serif;
     }
 
@@ -120,7 +120,7 @@ div#site{
 
     div#bod article h2{    
         font-size: 30px;
-        color: rgb(239, 102, 65);
+        color: #3080F0;
         font-style: normal;
         letter-spacing: -1px;
         text-align: left;
@@ -151,8 +151,6 @@ div#site{
     fieldset div.datos input{
         margin: 12px 0px 0 10px;
         padding: 8px;
-        border: 0px solid;
-        border-radius: 2px;
     }
     fieldset div.campo-texto{
         text-align: left !important;
@@ -167,8 +165,6 @@ div#site{
         padding: 10px;
         display: block;
         margin-bottom: 20px;
-        border-radius: 4px;
-        border: 0 solid;
     }
     fieldset div.campo-texto input{
         display: block;
@@ -180,8 +176,8 @@ div#site{
         font-size: 16px;
         border-radius: 3px;
         border: 1px solid #ccc;
-        color: #565656;
-        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 30);
+        color: #000;
+        /*box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 30);*/
         cursor: pointer;
         background: #e2e2e2; /* Old browsers */
         background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6+ */
@@ -222,19 +218,19 @@ div#site{
             font-size: 14px;
         }
         footer ul li{
-            color: #fff;
+            color: #000;
         }
         footer ul li:before{
             content:"- ";
         }
         footer ul li a{
-            color: #ccc;
+            color: #000;
             text-decoration: none;
             margin-bottom: 3px;
             display: inline-block;
         }
         footer ul li a:hover{
-            color: #fff;
+            color: #666;
         }
 
         footer div.data{
@@ -247,8 +243,7 @@ div#site{
             text-align: center;
             font-size:14px;
             text-decoration:none;
-            color:#ccc;
-            text-shadow: 0px 0px 2px #000;
+            color:#000;
         }
 
 
