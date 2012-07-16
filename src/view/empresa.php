@@ -1,12 +1,20 @@
-<?php include("header.php"); ?>
+<?php $this->include_tpl("header.php"); ?>
             
             <article>
-                <h2>Empresas</h2>
-                <div>
+                <div id="text" class="col">
+                <h2>Mision</h2>
                     <p>
-                        Donec quis ipsum erat, nec ornare nunc. Donec porta, dolor vitae facilisis accumsan, mi erat malesuada lorem, eget vulputate ligula odio ac tortor. Phasellus non nulla orci, sed placerat ipsum. Suspendisse potenti. In hac habitasse platea dictumst. Morbi sed pellentesque nulla. Nullam hendrerit, tellus id tristique euismod, neque est pharetra nibh, feugiat vestibulum ante felis eget arcu. Ut in massa nec augue interdum cursus ac ac felis. Pellentesque eu est ante, ac dapibus nisl. Vivamus metus purus, pharetra ut dapibus in, lobortis ut tortor. 
+						Nuestra misión es establecer una relación sólida y perdurable con los clientes, orientada a la satisfacción integral de sus necesidades y expectativas evolutivas, mediante el oportuno suministro de servicios y aplicaciones integrales de telecomunicaciones
+                    </p><p>
+						Nuestra vocación descansa en la búsqueda de la excelencia, las normas de calidad en la ejecución de los proyectos y la satisfacción de sus clientes de forma que su relación con la tecnología se transforme en una experiencia cotidiana y natural.
+                    </p>
+                </div>
+                <div id="text" class="col">  
+                <h2>Vision</h2>
+                    <p>
+                        Ser el proveedor número uno de servicios de calidad en las áreas de cómputo, redes y comunicaciones, donde la creatividad y una buena aleación de calidad e innovaciones, logra la excelencia en servicios de nuestros clientes y proyectos.
                     </p>
                 </div>
             </article>
             
-<?php include("footer.php"); ?>
+<?php $this->include_tpl("footer.php"); ?>

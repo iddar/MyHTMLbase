@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
 
@@ -10,9 +13,9 @@
     <meta name="viewport" content="width=device-width , initial-scale=1, maximum-scale=1"/>
     
     <link rel="stylesheet" href="static/css/root.css?=v0.4.0">
-    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
     
-    <script src="static/js/modernizr-2.5.3.min.js"></script>  
+    
+    <script src="static/js/modernizr.js"></script>
     <!--[if gte IE 9]>
         <style type="text/css">
             .gradient { filter: none; }
@@ -42,10 +45,10 @@
         </header>
         <nav>
             <ul>
-                <li><a href="index.php/">Home</a></li>
-                <li><a href="index.php/empresa" class="present">Empresa</a></li>
-                <li><a href="index.php/servicios">Servicios</a></li>
-                <li><a href="index.php/contacto">Contacto</a></li>
+                <li><a href="/pruebita/">Home</a></li>
+                <li><a href="empresa">Empresa</a></li>
+                <li><a href="servicios">Servicios</a></li>
+                <li><a href="contacto">Contacto</a></li>
             </ul>
         </nav>
         <div id="bod">

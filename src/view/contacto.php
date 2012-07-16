@@ -1,4 +1,4 @@
-<?php include("header.php"); ?>
+<?php $this->include_tpl("header.php"); ?>
             
             <article>
                 <h2>Contactanos</h2>
@@ -29,4 +29,4 @@
                 </div>
             </article>
             
-<?php include("footer.php"); ?>
+<?php $this->include_tpl("footer.php"); ?>

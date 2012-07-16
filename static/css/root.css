@@ -31,11 +31,13 @@ div#site{
         font-size: 0;
         padding-bottom: 30px;
     }
-        header div{display: inline-block;
+        header div{
+            display: inline-block;
             text-align: center;
             font-size: 16px;
         }
         header div.logo{ width: 35%; vertical-align: top; margin-top: 30px;}
+        header div.logo a,div.logo img{border: 0;}
         header div.marcas{ width: 65%; }
         div.logo hgroup{display:none;}
 
@@ -247,6 +249,38 @@ div#site{
         }
 
 
+/* ====== IE Fix ======= */
+.lt-ie8 #site{
+    background: #fff;
+}
+.lt-ie8 header div {
+    float: left;
+    background: #fff;
+}
+
+.lt-ie8 nav {
+        margin: 0 auto;
+        height: 30px;
+        width: 80%;
+        display: block;
+}
+
+.lt-ie8 nav ul li a{
+        color: #46033b;
+        background: #9dd53a;
+    }
+
+.lt-ie8 nav ul li{
+        float: left;
+}
+.lt-ie8 fieldset div.col{
+        float: left;
+        width: 45%;
+}
+.lt-ie8 footer div.list{
+        float: left;
+}
+
 @media screen and (max-width:680px){
 
 div#site{
@@ -363,12 +397,10 @@ div#site{
             content:"";
         }
         footer ul li a{
-            color: #ccc;
             margin-bottom: 5px;
             display: inline-block;
         }
         footer ul li a:hover{
-            color: #fff;
         }
 
         footer div.data{

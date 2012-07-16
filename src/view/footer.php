@@ -34,9 +34,9 @@
     <script>window.jQuery || document.write('<script src="static/js/jquery-1.7.2.min.js"><\/script>')</script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-    <script src="static/js/jquery.pjax.js"></script>
+    <script src="static/js/jquery.pjax.js?=v0.7"></script>
     
-    <script src="static/js/main.js?=v0.5.1"></script>
+    <script src="static/js/main.js?=v0.5.5"></script>
 
 </body>
 </html>
