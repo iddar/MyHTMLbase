@@ -13,7 +13,11 @@ class Render extends conf_render
 	*	@name render
 	*	@argummets $content Nombre del contenedor
 	*/
+
+	private $title;
+
 	function renderView($content, $title){			
+		$this->title = $title;
 		include( $this->conf["default_path"] . $content.".php");
 	}
 	
@@ -24,6 +28,7 @@ class Render extends conf_render
 	
 	function include_tpl($tpl_file){
 		if( $this->is_pjax() ) include($tpl_file);
+		else include_once("minhead.php");
 	}
 	
 }

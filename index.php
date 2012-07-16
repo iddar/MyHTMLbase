@@ -15,6 +15,8 @@ class conf_uri{
 class URI extends conf_uri
 {
 
+	private $var_uri;
+
 	function file_ok($name_file){
 		$path = 'src/view/';
 		$i = new RecursiveDirectoryIterator($path);
@@ -41,8 +43,14 @@ class URI extends conf_uri
 			$parametros[$this->conf["path_level"]]=$this->conf["default_index"];
 		}
 		//echo $conf["default_index"];
+		$this->var_uri= $parametros[$this->conf["path_level"]+1];
 		return $parametros[$this->conf["path_level"]];
 	}
+
+	function get_vars(){
+		return $this->var_uri;
+	}
+
 }
 	$uri = new URI;
 	$view = new Render;
@@ -51,7 +59,7 @@ class URI extends conf_uri
 	//print_r($temp);
 
 	if($uri->file_ok($temp)){
-		$view->renderView($temp, ucwords($temp)." :: Sacitec");
+		$view->renderView($temp, ucwords($temp)." :: Sacitec / " . $uri->get_vars() );
 	}else{
 
 	}

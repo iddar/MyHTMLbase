@@ -6,12 +6,12 @@
 <head>
     <meta charset="utf-8">
 
-    <title><?php echo $title; ?></title>
+    <title><?php echo $this->title; ?></title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width , initial-scale=1, maximum-scale=1"/>
-    
+    <base href="http://sacitec.com/pruebita/" target="_self" />
     <link rel="stylesheet" href="static/css/root.css?=v0.4.0">
     
     
