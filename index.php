@@ -1,5 +1,5 @@
 <?php
-	include("src/view/render.php");
+	include_once("src/view/render.php");
 /**
 * URI controlles
 */
@@ -24,7 +24,7 @@ class URI extends conf_uri
 		$Regex = new RegexIterator($Iterator, '/^.+\.php$/i', RecursiveRegexIterator::GET_MATCH);
 		foreach($Regex as $fileInfo) {
 			$i = explode("/", $fileInfo[0]);
-			$i = explode(".", $i[2]);
+			$i = explode(".", $i[2]); 
 			$docs[] = $i[0];
 		}
 		//$this->algo;
@@ -59,7 +59,7 @@ class URI extends conf_uri
 	//print_r($temp);
 
 	if($uri->file_ok($temp)){
-		$view->renderView($temp, ucwords($temp)." :: Sacitec / " . $uri->get_vars() );
+		$view->renderView($temp, ucwords($temp)." :: Sacitec");
 	}else{
 
 	}

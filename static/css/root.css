@@ -194,6 +194,23 @@ div#site{
         color: #000;
     }
 
+    div#result{
+        text-align: center;
+        width: 100%;
+        font-size: 26px !important;
+        padding-top:140px;
+        display: none;
+        background: url("../img/file.png") top center no-repeat;
+    }
+    div#loading{
+        text-align: center;
+        width: 100%;
+        display: none;
+        font-size: 26px !important;
+        padding-top:100px;
+        background: url("../img/preloaders.gif") top center no-repeat;
+    }
+
 /*  =======Footer=========     */
     footer{
         padding: 20px 0;
