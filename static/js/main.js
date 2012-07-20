@@ -1,23 +1,22 @@
-$(function(){
+$( function() {
   $("ul a").pjax("article", { fragment: "article" });
-  $('article').bind('pjax:start', function(){
-    $('article').slideUp()
-  }).bind('pjax:end', function(){
-    $('article').slideDown()
+  $('article').bind('pjax:start', function() {
+    $('article').slideUp();
+  }).bind('pjax:end', function() {
+    $('article').slideDown();
   });
-
 });
 
-$(document).ready(function() {
+$(document).ready( function() {
 
 
 	// Interceptamos el evento submit
-	$('#correos').submit(function() {
+	$('#correos').submit( function() {
 	// Enviamos el formulario usando AJAX
-	$(this).ajaxStart(function() {
+	$(this).ajaxStart( function() {
 	    //$('#loading').show();
 	    $('#result').hide();
-	}).ajaxStop(function() {
+	}).ajaxStop( function() {
 		//$('#loading').hide();
 	    $('#result').fadeIn('slow');
 	});

@@ -2,19 +2,34 @@
 
 class sendMail {
 
-	private $nombre_user="Juan perez";
-	private $empresa_user="Esto y el otro";
-	private $telfono_user="123546";
-	private $email_user="algo@esto.com";
-	private $mensaje_user="Esto es solo un mensaje para precticar el en vio de mensajes desde PHP";
-	private $email_to="iddar.olivares.servicios@gmail.com";
+	private $nombre_user = "Juan perez";
+	private $empresa_user = "Esto y el otro";
+	private $telfono_user = "123546";
+	private $email_user = "algo@esto.com";
+	private $mensaje_user = "Esto es solo un mensaje para precticar el en vio de mensajes desde PHP";
+	private $email_to = "iddar.olivares.servicios@gmail.com";
 	private $headers;
 	private $message;
 	//creamos un identificador único
 	//para indicar que las partes son idénticas
-	function gen_msg(){
+	private static $instance;
+	private function __construct() { }
+
+	public static function singleton() {
+        if (!isset(self::$instance)) {
+            $c = __CLASS__;
+            self::$instance = new $c;
+        }
+        return self::$instance;
+    }
+
+	public function __clone() {
+        trigger_error('Clone is not allowed.', E_USER_ERROR);
+    }
+
+	function gen_msg() {
 		$uniqueid= uniqid('np');
-		 
+
 		//indicamos las cabeceras del correo
 		$this->headers = "MIME-Version: 1.0\r\n";
 		$this->headers .= "From: portal-web@sacitec.com \r\n";
@@ -25,7 +40,7 @@ class sendMail {
 		//es multipart/alternative para indicarle que existirá
 		//un contenido alternativo
 		$this->headers .= "Content-Type: multipart/alternative;boundary=" . $uniqueid. "\r\n";
-		 
+
 		$this->message = "";
 
 		$this->message .= "\r\n\r\n--" . $uniqueid. "\r\n";
@@ -44,10 +59,9 @@ class sendMail {
 			$this->message .= "<p><b>Mensaje: </b></p>";
 			$this->message .= "<div>".$this->mensaje_user."</div>";	 
 		$this->message .= "\r\n\r\n--" . $uniqueid. "--";
-
 	}
 
-	function set_values($nombre,$empresa,$telefono,$email,$msj){
+	function set_values( $nombre, $empresa, $telefono, $email, $msj ) {
 		$this->nombre_user = $nombre;
 		$this->empresa_user = $empresa;
 		$this->telfono_user = $telefono;
@@ -55,11 +69,11 @@ class sendMail {
 		$this->mensaje_user = $msj;
 	}
 	//con la función mail de PHP enviamos el mail.
-	function send_mail(){
+	function send_mail() {
 		$this->gen_msg();
 		mail(
 			$this->email_to,
-			$this->empresa_user." [Mensaje desde el formilario de contacto.]",
+			$this->empresa_user . " [Mensaje desde el formilario de contacto.]",
 			$this->message, $this->headers
 		);
 	}
