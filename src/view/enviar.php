@@ -36,5 +36,3 @@ require_once( "src/class/mail.php" );
 	} catch ( Exception $e ) {
 		echo 'Excepción capturada: ', $e->getMessage(), "\n";
 	}
-
-?>
