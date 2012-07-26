@@ -12,6 +12,10 @@
                 </p>
                 </div>
 
+                <div>
+                    <p>Manten tu equipo protegido. <a href="antivirus">Prueba Kaspersky Antivirus por 30 dias.</a></p>
+                </div>
+
             </article>
 
 <?php $this->include_tpl("footer.php"); ?>

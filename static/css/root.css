@@ -26,8 +26,13 @@ div#site{
     /*box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 30);*/
 }
 
+    .clean{ overflow: auto; }
     .right{
         float: right;
+        margin: 5px;
+    }
+    .left{
+        float: left;
         margin: 5px;
     }
 
@@ -117,6 +122,11 @@ div#site{
     div#bod div{
         color: #000;
         font: 300 16px/1.5 "Helvetica Neue",sans-serif;
+    }
+
+    div#bod div.min{
+        color: #000;
+        font: 300 14px/1.5 "Helvetica Neue",sans-serif;
     }
 
     div#bod p{
