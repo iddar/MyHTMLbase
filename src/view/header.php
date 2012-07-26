@@ -13,9 +13,6 @@
     <meta name="viewport" content="width=device-width , initial-scale=1, maximum-scale=1"/>
     <base href="http://sacitec.com/pruebita/" target="_self" />
     <link rel="stylesheet" href="static/css/root.css?=v0.4.0">
-    
-    
-    <script src="static/js/modernizr.js"></script>
     <!--[if gte IE 9]>
         <style type="text/css">
             .gradient { filter: none; }
