@@ -42,6 +42,7 @@
                 <li><a href="/pruebita/">Home</a></li>
                 <li><a href="empresa">Empresa</a></li>
                 <li><a href="servicios">Servicios</a></li>
+                <li><a href="soporte">Soporte</a></li>
                 <li><a href="contacto">Contacto</a></li>
             </ul>
         </nav>

@@ -12,12 +12,12 @@
                 <h2>Descarga Kaspersky</h2>
                     <p class="clean">
                         Kaspersky Internet Security brinda protección Premium contra todas las amenazas en línea, ya que combina nuestra protección antivirus esencial con funciones avanzadas, como el firewall bidireccional, el modo para operaciones bancarias y los controles parentales. <br />
-                        <a href="http://downloads.kasperskyusa.com/files/?file=kis&lang=la">Clic aqui para descargar Kaspersky Internet Security 2010</a>
+                        <a href="http://downloads.kasperskyusa.com/files/?file=kis&lang=la">Clic aqui para descargar Kaspersky Internet Security 2012</a>
                     </p>
                     <hr />
                     <p class="clean"> 
                         Kaspersky Anti-Virus es la columna vertebral del sistema de seguridad de su PC ya que trabaja silenciosamente en segundo plano a fin de brindarle una protección esencial contra virus, software malicioso y mucho más. <br />
-                        <a href="http://downloads.kasperskyusa.com/files/?file=kav&lang=la">Clic aqui para descargar Kaspersky Antivirus 2010</a>
+                        <a href="http://downloads.kasperskyusa.com/files/?file=kav&lang=la">Clic aqui para descargar Kaspersky Antivirus 2012</a>
                     </p>
                     <hr />
                 </div>
