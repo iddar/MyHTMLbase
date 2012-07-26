@@ -39,9 +39,6 @@
                 </hgroup>
                 <a href="#" title="Portal Sacitec.com"><img src="static/img/logomini.png" alt="Logo de la empresa sacitec"></a>
             </div>
-            <div class="marcas">
-                <img src="static/img/marcas.png" alt="Logo de la marcas que distribuimos">
-            </div>
         </header>
         <nav>
             <ul>

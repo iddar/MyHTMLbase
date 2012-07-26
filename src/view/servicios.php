@@ -4,8 +4,13 @@
                 <h2>Servicios</h2>
                 <div>
                     <p>
-                        Donec quis ipsum erat, nec ornare nunc. Donec porta, dolor vitae facilisis accumsan, mi erat malesuada lorem, eget vulputate ligula odio ac tortor. Phasellus non nulla orci, sed placerat ipsum. Suspendisse potenti. In hac habitasse platea dictumst. Morbi sed pellentesque nulla. Nullam hendrerit, tellus id tristique euismod, neque est pharetra nibh, feugiat vestibulum ante felis eget arcu. Ut in massa nec augue interdum cursus ac ac felis. Pellentesque eu est ante, ac dapibus nisl. Vivamus metus purus, pharetra ut dapibus in, lobortis ut tortor. 
+                        Soluciones avanzadas de comunicación, ingeniería y tecnología ofrece un gran numero de servicios que dividimos en tres categorias.
                     </p>
+					<ul>
+						<li><a href="servicios/informatica">Informatica</a></li>
+						<li><a href="servicios/redes">Redes</a></li>
+						<li><a href="servicios/telecomunicacion">Telecomunicación</a></li>
+					</ul>
                 </div>
             </article>
             

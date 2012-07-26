@@ -26,6 +26,11 @@ div#site{
     /*box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 30);*/
 }
 
+    .right{
+        float: right;
+        margin: 5px;
+    }
+
     header{
         background: #fff;
         font-size: 0;
@@ -38,7 +43,6 @@ div#site{
         }
         header div.logo{ width: 35%; vertical-align: top; margin-top: 30px;}
         header div.logo a,div.logo img{border: 0;}
-        header div.marcas{ width: 65%; }
         div.logo hgroup{display:none;}
 
     nav {
@@ -120,6 +124,10 @@ div#site{
     }
 
 
+    article a {
+        color: #000;
+    }
+
     div#bod article h2{    
         font-size: 30px;
         color: #3080F0;
@@ -152,7 +160,12 @@ div#site{
     }
     fieldset div.datos input{
         margin: 12px 0px 0 10px;
-        padding: 8px;
+        padding: 8px;    
+        border: 1px solid rgb(178, 178, 178);
+        box-sizing : content-box;
+        border-radius: 3px;
+        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+        transition: all 0.2s linear;
     }
     fieldset div.campo-texto{
         text-align: left !important;
@@ -166,7 +179,12 @@ div#site{
         height: 80px;
         padding: 10px;
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 20px;    
+        border: 1px solid rgb(178, 178, 178);
+        box-sizing : content-box;
+        border-radius: 3px;
+        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+        transition: all 0.2s linear;
     }
     fieldset div.campo-texto input{
         display: block;
@@ -216,25 +234,33 @@ div#site{
         padding: 20px 0;
         border-top: solid 8px #000;
         margin-bottom: 0px;
-
+        font-size: 0;
     }
 
     footer div#enlaces{
         display: inline-block;
-        width: 50%
+        width: 40%;
+        vertical-align:top;
     }
     footer div.list{
         display: inline-block;
         text-align: center;
         margin-left: 10px;
     }
+
+        footer h3 a{
+            font-size: 14px;
+            color: #000;
+            text-decoration: none;
+        }
+
         footer ul{
             list-style: none;
             padding: 5px 0 0 5px;
             border-left: solid #2a2a2a 2px;
             display: inline-block;
             text-align: left;
-            font-size: 14px;
+            font-size: 12px;
         }
         footer ul li{
             color: #000;
@@ -253,18 +279,27 @@ div#site{
         }
 
         footer div.data{
+            width: 60%;
             display: inline-block;
             vertical-align: text-bottom;
         }
 
         footer div.data p{
-            margin-top: 60px;
+            margin-top: 10px;
             text-align: center;
             font-size:14px;
             text-decoration:none;
             color:#000;
         }
 
+        div.marcas {
+            text-align: center;
+            width: 100%;
+        }
+
+        div.marcas img{
+            display: inline-block;
+        }
 
 /* ====== IE Fix ======= */
 .lt-ie8 #site{
